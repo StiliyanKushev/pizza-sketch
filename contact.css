@@ -1,0 +1,101 @@
+#contact-section{
+    background: #DBDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+}
+
+#contact-section > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+#contact-section > div h1{
+    font-size: 4rem;
+}
+
+#contact-section form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-section form input,
+#contact-section form textarea{
+    font-size: 2rem;
+    border: none;
+    border-bottom: 2px solid #535353;
+    background-color: transparent;
+    margin-top: 5rem;
+    outline: none;
+}
+
+#contact-section form textarea{
+    border-right: 2px solid #535353;
+    resize: none;
+}
+
+#contact-section form button{
+    margin-top: 3rem;
+    padding: .4rem;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    background-color: #A44F4F;
+    color: white;
+}
+
+#creator-div{
+    margin-left: 13rem;
+}
+
+#creator-div a{
+    color: #535353;
+}
+
+#creator-div > div{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#creator-div > div i{
+    font-size: 3rem;
+}
+
+#made-by{
+    font-size: 2rem;
+}
+
+#creator{
+    font-size: 3rem;
+}
+
+@media all and (max-width:500px){
+    #contact-section > div h1{
+        font-size: 3rem;
+    }
+
+    #contact-section form input,
+    #contact-section form textarea{
+        font-size: 1.3rem;
+    }
+}
+
+@media all and (max-width:1010px){
+    #contact-section{
+        flex-direction: column;
+        height: fit-content;
+        padding: 4rem;
+    }
+    #creator-div{
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+}

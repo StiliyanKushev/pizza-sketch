@@ -1,0 +1,83 @@
+#toppicks-section{
+    background-color: #821A00;
+    padding: 0rem;
+}
+
+#toppicks-section h1{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 8rem;
+    margin-bottom: 3rem;
+}
+
+#toppicks-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -10rem;
+}
+
+.card{
+    background-color: #8E2A20;
+    width: 340px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 20px 32px -15px rgba(0,0,0,0.75);
+    border-radius: 6px;
+    font-size: 2.5rem;
+    color: #711600;
+    top: 0px;
+    position: relative;
+    transition:top 300ms;
+}
+
+.card:hover{
+    top: -30px;
+}
+
+.card img{
+    margin-top: -3.3rem;
+    width: 300px;
+}
+
+.shadow-button{
+    cursor: pointer;
+    background-color: #B1756F;
+    border-radius: 5px;
+    box-shadow: 0px 10px 9px -7px rgba(0,0,0,0.75);
+    width: 64%;
+    text-align: center;
+    margin: 1rem;
+    margin-bottom: 2.3rem;
+}
+
+.card:nth-child(2),
+.card:nth-child(3){
+    margin-top: 15rem;
+}
+
+@media all and (max-width:1670px){
+    .card{
+        width: 300px;
+        margin: 2rem;
+        margin-bottom: 4rem;
+    }
+    .card:nth-child(2),
+    .card:nth-child(3){
+        margin-top: 0rem;
+    }
+
+    #toppicks-cards{
+        flex-wrap: wrap;
+        margin-top: 8rem;
+    }
+
+    #toppicks-section{
+        height: fit-content;
+    }
+}

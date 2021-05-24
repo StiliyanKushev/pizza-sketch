@@ -1,0 +1,139 @@
+#menu-section{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #6C5B4A;
+}
+
+#bottom-plane{
+    background-image: url("./assets/planewood.png");
+    height: 170px;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0px -12px 110px -18px rgba(0,0,0,0.75);
+}
+
+#bottom-plane img{
+    width: 40px;
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.3));
+}
+
+#bottom-plane p{
+    margin-left: 1rem;
+}
+
+
+#menu-options{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.option{
+    overflow: inherit;
+    width: 300px;
+    height: 540px;
+    background: rgb(196,196,196);
+    background: linear-gradient(0deg, rgba(196,196,196,1) -85%, rgba(255,255,255,0) 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.option img{
+    filter: saturate(0);
+    opacity: 0.7;
+    max-width: 120%;
+    margin-top: auto;
+    max-height: 80%;
+    transition: filter, transform, top;
+    transition-duration: 230ms;
+    position: relative;
+    top: 0px;
+}
+
+.option:hover img{
+    filter: saturate(1);
+    transform: scale(1.1);
+    top: -30px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.option:hover #pizzas{
+    color: #E1953F;
+}
+
+.option:hover #drinks{
+    color: #741927;
+}
+
+.option:hover #desserts{
+    color: #41170B;
+}
+
+
+.option p:hover{
+    cursor: pointer;
+}
+
+.option p{
+    height: 20%;
+    color: #D8D8D8;
+    font-size: 4rem;
+}
+
+.option:nth-child(2){
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+@media screen and (max-width: 1680px){
+    #menu-options .option:nth-child(2){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu-options {
+        width: 85%;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1235px){
+    .option{
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .option p{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 670px){
+    #menu-options .option:nth-child(2) img{
+        height: 350px;
+    }
+
+    .option p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+    #menu-options .option img{
+        display: none;
+    }
+
+    #menu-options{
+        width: 100%;
+    }
+}

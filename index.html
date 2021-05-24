@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="toppicks.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="menu.css">
+        <script src="https://kit.fontawesome.com/a2628b9385.js" crossorigin="anonymous"></script>
+        <script>
+            function handleBurgerClick(x){
+                x.classList.toggle("change");
+            }
+        </script>
+        <script src="./header.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/logo-dark.png" id="header-logo"></img>
+            <nav id="header-navigation">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Store</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </nav>
+            <div onclick="handleBurgerClick(this)" id="burger">
+                <div id="bar1"></div>
+                <div id="bar2"></div>
+                <div id="bar3"></div>
+            </div>
+        </header>
+        <main>
+            <section id="home-section">
+                <div id="home-content">
+                    <h1>Street food</h1>
+                    <h2>looks good, smells good, tastes good</h2>
+                    <div id="home-buttons">
+                        <button id="order-now">Order Now</button>
+                        <button id="learn-more">Learn More</button>
+                    </div>
+                </div>
+                <img src="./assets/wholepizza.png" id="home-image"/>
+            </section>
+            <section id="about-section">
+                
+                <div id="about-content">
+                    <h1>In the business for over 10 years</h1>
+                    <h2>Our food is the best there is! Pizza is the greatest food of all time and we strive to show that!</h2>
+                    <video width="550" height="300" autoplay="autoplay" muted loop>
+                        <source src="./assets/video.mp4"  type="video/mp4" />
+                      </video>
+                </div>
+                
+                <img src="./assets/side-piza.png" id="about-image"/>
+            </section>
+            <section id="toppicks-section">
+                <h1>Our Top Picks</h1>
+                <div id="toppicks-cards">
+                    <div class="card">
+                        <img src="./assets/salam.png"/>
+                        <div class="shadow-button"><p>10$</p></div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/pepper.png"/>
+                        <div class="shadow-button"><p>10$</p></div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/mushrooms.png"/>
+                        <div class="shadow-button"><p>10$</p></div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/cheese.png"/>
+                        <div class="shadow-button"><p>10$</p></div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact-section">
+                <div>
+                    <h1>Contact Us</h1>
+                    <form action="#">
+                        <input name="username" type="text" placeholder="Name">
+                        <input name="email" type="email" placeholder="Email">
+                        <textarea name="message" cols="30" rows="6" placeholder="What's on your mind?"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="creator-div">
+                    <p id="made-by">This project was made with love by</p>
+                    <p id="creator">Krasen Kushev</p>
+                    <div>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </section>
+            <section id="menu-section">
+                <div id="menu-options">
+                    <div class="option">
+                        <img src="./assets/pizzas.png"/>
+                        <p id="pizzas">Pizzas</p>
+                    </div>
+                    <div class="option">
+                        <img src="./assets/drinks.png"/>
+                        <p id="drinks">Drinks</p>
+                    </div>
+                    <div class="option">
+                        <img src="./assets/desserts.png"/>
+                        <p id="desserts">Desserts</p>
+                    </div>
+                </div>
+                <div id="bottom-plane">
+                    <img src="./assets/cart.svg" />
+                    <p>17 items</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
